@@ -1,5 +1,5 @@
 "use server";
-import { formDataToJson } from "./utils";
+import { formDataToObj } from "./utils";
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
@@ -35,7 +35,7 @@ async function sendMail({
 }
 
 async function onSubmit(prev: any, formData: FormData) {
-  const formdata = JSON.parse(formDataToJson(formData));
+  const formdata = formDataToObj(formData);
 
   return sendMail(formdata)
     .then(() => {
