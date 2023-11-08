@@ -12,7 +12,7 @@ function SubmitFormButton() {
     <button
       type="submit"
       aria-disabled={pending}
-      className="hover:bg-slate-500 w-full hover:rounded-lg"
+      className="hover:bg-slate-500 w-full hover:rounded-lg active:bg-slate-500 active:text-white"
     >
       보내기
     </button>
@@ -105,14 +105,14 @@ export const Contact = () => {
               <SubmitFormButton />
             </div>
             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center flex flex-col">
-              <a className="text-indigo-500">mallangcoogi@gmail.com</a>
               <span className="inline-flex">
-                <a className="text-gray-500">
+                <span className="text-indigo-500">mallangcoogi@gmail.com</span>
+                <a className="ml-4 text-gray-500">
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
@@ -122,9 +122,9 @@ export const Contact = () => {
                 <a className="ml-4 text-gray-500">
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
@@ -135,9 +135,9 @@ export const Contact = () => {
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
@@ -155,9 +155,9 @@ export const Contact = () => {
                 <a className="ml-4 text-white-500">
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
